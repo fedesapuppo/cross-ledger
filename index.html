@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cross Ledger | US Bookkeepers, Sourced from Latin America</title>
+  <meta name="description" content="Cross Ledger places vetted, English-speaking bookkeepers from Latin America with US small businesses. Same time zone, US-trained tools, one-time placement fee.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-cream">
+
+  <!-- Nav -->
+  <nav class="sticky top-0 z-50 bg-[#FDF8F0]/95 backdrop-blur-md border-b border-[#6B4226]/5">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12">
+      <div class="flex items-center justify-between h-24">
+        <a href="index.html" class="flex-shrink-0">
+          <img src="logo.png" alt="Cross Ledger" class="h-20 w-auto">
+        </a>
+        <div class="hidden md:flex items-center gap-10">
+          <a href="index.html" class="nav-link active text-sm font-medium text-[#6B4226]">Home</a>
+          <a href="vetting.html" class="nav-link text-sm font-medium text-[#1a1a1a]/60 hover:text-[#6B4226] transition-colors">How We Vet</a>
+          <a href="about.html" class="nav-link text-sm font-medium text-[#1a1a1a]/60 hover:text-[#6B4226] transition-colors">About</a>
+          <a href="faq.html" class="nav-link text-sm font-medium text-[#1a1a1a]/60 hover:text-[#6B4226] transition-colors">FAQ</a>
+          <a href="https://calendly.com/fedesapuppo/30min" class="btn-primary text-sm" target="_blank">Book a Discovery Call</a>
+        </div>
+        <button id="mobile-nav-toggle" class="md:hidden p-2" aria-expanded="false" aria-label="Toggle navigation">
+          <i id="menu-icon" data-lucide="menu" class="w-6 h-6 text-[#6B4226]"></i>
+          <i id="close-icon" data-lucide="x" class="w-6 h-6 text-[#6B4226]" style="display:none"></i>
+        </button>
+      </div>
+    </div>
+    <div id="mobile-menu" class="mobile-menu md:hidden border-t border-[#6B4226]/5">
+      <div class="px-5 py-4 space-y-1">
+        <a href="index.html" class="block py-3 text-sm font-medium text-[#6B4226]">Home</a>
+        <a href="vetting.html" class="block py-3 text-sm font-medium text-[#1a1a1a]/60">How We Vet</a>
+        <a href="about.html" class="block py-3 text-sm font-medium text-[#1a1a1a]/60">About</a>
+        <a href="faq.html" class="block py-3 text-sm font-medium text-[#1a1a1a]/60">FAQ</a>
+        <a href="https://calendly.com/fedesapuppo/30min" class="btn-primary text-sm text-center block mt-3" target="_blank">Book a Discovery Call</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="py-20 sm:py-28 lg:py-36">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12">
+      <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-16 hero-split">
+        <div class="flex-1 text-center lg:text-left">
+          <div class="section-label">Nearshore Bookkeeper Placement</div>
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-[#6B4226] leading-[1.1] mb-6">
+            US bookkeepers, sourced from Latin America.
+          </h1>
+          <p class="text-lg sm:text-xl text-[#1a1a1a]/70 max-w-xl mb-10 leading-relaxed">
+            Cross Ledger places vetted, English-speaking bookkeepers from Latin America with US small businesses. Same time zone, US-trained tools, and a placement fee well below what traditional recruiters charge.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+            <a href="https://calendly.com/fedesapuppo/30min" class="btn-primary text-base px-8 py-4" target="_blank">
+              Book a Discovery Call
+              <i data-lucide="arrow-right" class="w-4 h-4"></i>
+            </a>
+            <a href="vetting.html" class="btn-secondary text-base px-8 py-4">
+              See How We Vet
+            </a>
+          </div>
+        </div>
+        <div class="flex-1 w-full lg:w-auto">
+          <div class="img-overlay aspect-[4/3]">
+            <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=800&q=80" alt="Professional team collaborating remotely" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pain Points -->
+  <section class="py-20 sm:py-28">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12">
+      <div class="text-center mb-16">
+        <div class="section-label justify-center">Common frustrations</div>
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#6B4226] mb-4">Sound familiar?</h2>
+        <p class="text-[#1a1a1a]/60 max-w-xl mx-auto text-lg">Problems we hear from every small business owner who has tried to hire a bookkeeper.</p>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+        <div class="card">
+          <div class="icon-circle">
+            <i data-lucide="dollar-sign"></i>
+          </div>
+          <h3 class="font-semibold text-lg mb-2 font-['Inter']">"A good US bookkeeper costs more than my work justifies."</h3>
+          <p class="text-[#1a1a1a]/60 text-sm leading-relaxed">Four to six thousand dollars a month for fifteen hours of actual work. The math doesn't add up.</p>
+        </div>
+        <div class="card">
+          <div class="icon-circle">
+            <i data-lucide="wrench"></i>
+          </div>
+          <h3 class="font-semibold text-lg mb-2 font-['Inter']">"The last bookkeeper didn't really know my tools."</h3>
+          <p class="text-[#1a1a1a]/60 text-sm leading-relaxed">They claimed QuickBooks, Stripe, Shopify, and Gusto. Turns out they knew one or two well and were faking the rest.</p>
+        </div>
+        <div class="card">
+          <div class="icon-circle">
+            <i data-lucide="globe"></i>
+          </div>
+          <h3 class="font-semibold text-lg mb-2 font-['Inter']">"I tried offshore and it was a nightmare to communicate."</h3>
+          <p class="text-[#1a1a1a]/60 text-sm leading-relaxed">Time-zone lag, broken English, misunderstandings on basic accounting vocabulary. Never again.</p>
+        </div>
+        <div class="card">
+          <div class="icon-circle">
+            <i data-lucide="clock"></i>
+          </div>
+          <h3 class="font-semibold text-lg mb-2 font-['Inter']">"I don't have time to interview ten people to find the one good one."</h3>
+          <p class="text-[#1a1a1a]/60 text-sm leading-relaxed">Hiring is a months-long distraction from running the business.</p>
+        </div>
+        <div class="card sm:col-span-2 lg:col-span-1">
+          <div class="icon-circle">
+            <i data-lucide="eye"></i>
+          </div>
+          <h3 class="font-semibold text-lg mb-2 font-['Inter']">"I want a bookkeeper who owns the work, not one I have to micromanage."</h3>
+          <p class="text-[#1a1a1a]/60 text-sm leading-relaxed">Detail-obsessed, results-oriented, owns the entire function. That's what you need, and that's what we find.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section class="py-20 sm:py-28 bg-white">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12">
+      <div class="flex flex-col lg:flex-row gap-16 lg:gap-24 items-start">
+        <div class="lg:w-5/12 lg:sticky lg:top-28">
+          <div class="section-label">The Process</div>
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#6B4226] mb-4">How it works</h2>
+          <p class="text-[#1a1a1a]/60 text-lg mb-8 leading-relaxed">Five steps from discovery call to your new bookkeeper. We do the hard part.</p>
+          <div class="img-overlay aspect-[4/3] hidden lg:block">
+            <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=700&q=80" alt="Business professionals in a meeting" loading="lazy">
+          </div>
+        </div>
+
+        <div class="lg:w-7/12 space-y-0">
+          <div class="flex gap-5">
+            <div class="flex flex-col items-center">
+              <div class="step-number">1</div>
+              <div class="step-connector"></div>
+            </div>
+            <div class="pb-10">
+              <h3 class="font-semibold text-xl mb-2 font-['Inter']">Tell us what you need</h3>
+              <p class="text-[#1a1a1a]/60 leading-relaxed">A 30-minute call where we go through your tools, your hours, your books, and what's gone wrong before. We use this to build the candidate scorecard.</p>
+            </div>
+          </div>
+
+          <div class="flex gap-5">
+            <div class="flex flex-col items-center">
+              <div class="step-number">2</div>
+              <div class="step-connector"></div>
+            </div>
+            <div class="pb-10">
+              <h3 class="font-semibold text-xl mb-2 font-['Inter']">We source and screen</h3>
+              <p class="text-[#1a1a1a]/60 leading-relaxed">We reach out to LATAM bookkeepers who match your scorecard. Every candidate goes through structured interviews, an English-fluency check, and a practical simulation in QuickBooks.</p>
+            </div>
+          </div>
+
+          <div class="flex gap-5">
+            <div class="flex flex-col items-center">
+              <div class="step-number">3</div>
+              <div class="step-connector"></div>
+            </div>
+            <div class="pb-10">
+              <h3 class="font-semibold text-xl mb-2 font-['Inter']">You see candidates on video before you commit</h3>
+              <p class="text-[#1a1a1a]/60 leading-relaxed">Every candidate comes with a short intro video. They introduce themselves, walk through their experience, and explain a basic accounting concept on camera. Rule someone out in two minutes instead of two interviews.</p>
+            </div>
+          </div>
+
+          <div class="flex gap-5">
+            <div class="flex flex-col items-center">
+              <div class="step-number">4</div>
+              <div class="step-connector"></div>
+            </div>
+            <div class="pb-10">
+              <h3 class="font-semibold text-xl mb-2 font-['Inter']">You interview the ones you like</h3>
+              <p class="text-[#1a1a1a]/60 leading-relaxed">We schedule, you interview, you decide. We're in the loop only as much as you want us to be.</p>
+            </div>
+          </div>
+
+          <div class="flex gap-5">
+            <div class="flex flex-col items-center">
+              <div class="step-number">5</div>
+            </div>
+            <div class="pb-2">
+              <h3 class="font-semibold text-xl mb-2 font-['Inter']">You hire them directly. We charge a one-time placement fee.</h3>
+              <p class="text-[#1a1a1a]/60 leading-relaxed">No monthly markup, no payroll relationship, no ongoing fee. You own the hire.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section class="py-20 sm:py-28">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12">
+      <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
+        <div class="lg:w-1/2">
+          <div class="img-overlay aspect-[4/3]">
+            <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=700&q=80" alt="Financial planning and accounting" loading="lazy">
+          </div>
+        </div>
+        <div class="lg:w-1/2">
+          <div class="section-label">Pricing</div>
+          <h2 class="text-3xl sm:text-4xl font-bold text-[#6B4226] mb-6">Simple, transparent pricing</h2>
+          <div class="space-y-4 text-[#1a1a1a]/70 text-lg leading-relaxed">
+            <p>We charge a <strong class="text-[#1a1a1a]">one-time placement fee</strong> that scales with the role's annual salary. It's well below the typical recruiter rate of 15-25%.</p>
+            <p>No monthly markup. No payroll. No ongoing cost. You hire the bookkeeper directly.</p>
+            <p>Most of our customers find the fee pays for itself in the first month of having a properly trained bookkeeper instead of an under-qualified one.</p>
+          </div>
+          <p class="text-sm text-[#6B4226] font-medium mt-6 mb-8 flex items-center gap-2">
+            <i data-lucide="building-2" class="w-4 h-4"></i>
+            Accounting firms placing multiple bookkeepers qualify for volume discounts.
+          </p>
+          <a href="https://calendly.com/fedesapuppo/30min" class="btn-primary" target="_blank">
+            Get Your Quote
+            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust Elements -->
+  <section class="py-20 sm:py-28 bg-white">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12">
+      <div class="text-center mb-16">
+        <div class="section-label justify-center">Why Cross Ledger</div>
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#6B4226] mb-4">Built on trust, not promises</h2>
+        <p class="text-[#1a1a1a]/60 max-w-xl mx-auto text-lg">No testimonials or case studies yet. Here's what we can show you instead.</p>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="trust-badge">
+          <div class="icon-circle mx-auto">
+            <i data-lucide="search"></i>
+          </div>
+          <h3 class="font-semibold text-lg mb-2 font-['Inter']">Rigorous Vetting</h3>
+          <p class="text-[#1a1a1a]/60 text-sm leading-relaxed">Structured interviews, English fluency checks, practical simulations in QBO, Stripe, and Shopify. Not a resume screen.</p>
+        </div>
+        <div class="trust-badge">
+          <div class="icon-circle mx-auto">
+            <i data-lucide="graduation-cap"></i>
+          </div>
+          <h3 class="font-semibold text-lg mb-2 font-['Inter']">Big Four Trained</h3>
+          <p class="text-[#1a1a1a]/60 text-sm leading-relaxed">Our co-founder is a Big Four-trained Assurance accountant. We know what good accounting work looks like.</p>
+        </div>
+        <div class="trust-badge">
+          <div class="icon-circle mx-auto">
+            <i data-lucide="shield-check"></i>
+          </div>
+          <h3 class="font-semibold text-lg mb-2 font-['Inter']">6-Month Guarantee</h3>
+          <p class="text-[#1a1a1a]/60 text-sm leading-relaxed">If the placement doesn't work out within six months, we source a replacement at no additional cost.</p>
+        </div>
+        <div class="trust-badge">
+          <div class="icon-circle mx-auto">
+            <i data-lucide="circle-check"></i>
+          </div>
+          <h3 class="font-semibold text-lg mb-2 font-['Inter']">No Placement, No Fee</h3>
+          <p class="text-[#1a1a1a]/60 text-sm leading-relaxed">If we don't find a candidate you hire, you pay nothing. Zero risk to start.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section class="py-20 sm:py-28">
+    <div class="max-w-4xl mx-auto px-5 sm:px-8 lg:px-12">
+      <div class="cta-banner py-16 sm:py-20 px-8 sm:px-16 text-center">
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#FDF8F0] mb-5">Ready to find your bookkeeper?</h2>
+        <p class="text-[#FDF8F0]/80 mb-10 max-w-lg mx-auto text-lg leading-relaxed">Book a free 30-minute discovery call. We'll learn about your business, your tools, and your needs, and tell you exactly what we can do.</p>
+        <a href="https://calendly.com/fedesapuppo/30min" class="btn-light text-base px-10 py-4" target="_blank">
+          Book a Discovery Call
+          <i data-lucide="arrow-right" class="w-4 h-4"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-[#6B4226]/8 py-12">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12">
+      <div class="flex flex-col sm:flex-row justify-between items-center gap-8">
+        <div class="flex items-center gap-3">
+          <img src="logo.png" alt="Cross Ledger" class="h-14 w-auto">
+        </div>
+        <div class="flex flex-wrap justify-center gap-8 text-sm text-[#1a1a1a]/50">
+          <a href="mailto:fedesapuppo@hotmail.com" class="hover:text-[#6B4226] transition-colors">Contact</a>
+          <a href="privacy.html" class="hover:text-[#6B4226] transition-colors">Privacy Policy</a>
+          <a href="terms.html" class="hover:text-[#6B4226] transition-colors">Terms of Service</a>
+        </div>
+      </div>
+      <div class="text-center mt-8 text-xs text-[#1a1a1a]/35">
+        Cross Ledger LLC &middot; Wyoming, USA
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

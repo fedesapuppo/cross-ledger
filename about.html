@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | Cross Ledger</title>
+  <meta name="description" content="Cross Ledger was founded by a Big Four-trained accountant and an entrepreneur to connect US small businesses with top Latin American bookkeeping talent.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-cream">
+
+  <!-- Nav -->
+  <nav class="sticky top-0 z-50 bg-[#FDF8F0]/95 backdrop-blur-md border-b border-[#6B4226]/5">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12">
+      <div class="flex items-center justify-between h-24">
+        <a href="index.html" class="flex-shrink-0">
+          <img src="logo.png" alt="Cross Ledger" class="h-20 w-auto">
+        </a>
+        <div class="hidden md:flex items-center gap-10">
+          <a href="index.html" class="nav-link text-sm font-medium text-[#1a1a1a]/60 hover:text-[#6B4226] transition-colors">Home</a>
+          <a href="vetting.html" class="nav-link text-sm font-medium text-[#1a1a1a]/60 hover:text-[#6B4226] transition-colors">How We Vet</a>
+          <a href="about.html" class="nav-link active text-sm font-medium text-[#6B4226]">About</a>
+          <a href="faq.html" class="nav-link text-sm font-medium text-[#1a1a1a]/60 hover:text-[#6B4226] transition-colors">FAQ</a>
+          <a href="https://calendly.com/fedesapuppo/30min" class="btn-primary text-sm" target="_blank">Book a Discovery Call</a>
+        </div>
+        <button id="mobile-nav-toggle" class="md:hidden p-2" aria-expanded="false" aria-label="Toggle navigation">
+          <i id="menu-icon" data-lucide="menu" class="w-6 h-6 text-[#6B4226]"></i>
+          <i id="close-icon" data-lucide="x" class="w-6 h-6 text-[#6B4226]" style="display:none"></i>
+        </button>
+      </div>
+    </div>
+    <div id="mobile-menu" class="mobile-menu md:hidden border-t border-[#6B4226]/5">
+      <div class="px-5 py-4 space-y-1">
+        <a href="index.html" class="block py-3 text-sm font-medium text-[#1a1a1a]/60">Home</a>
+        <a href="vetting.html" class="block py-3 text-sm font-medium text-[#1a1a1a]/60">How We Vet</a>
+        <a href="about.html" class="block py-3 text-sm font-medium text-[#6B4226]">About</a>
+        <a href="faq.html" class="block py-3 text-sm font-medium text-[#1a1a1a]/60">FAQ</a>
+        <a href="https://calendly.com/fedesapuppo/30min" class="btn-primary text-sm text-center block mt-3" target="_blank">Book a Discovery Call</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="py-20 sm:py-28">
+    <div class="max-w-4xl mx-auto px-5 sm:px-8 lg:px-12 text-center">
+      <div class="section-label justify-center">About Us</div>
+      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-[#6B4226] leading-[1.1] mb-6">The team behind Cross Ledger</h1>
+      <p class="text-lg text-[#1a1a1a]/70 max-w-2xl mx-auto leading-relaxed">
+        We place bookkeepers and staff accountants. That's the entire offer. We're deliberately narrow because that's how we go deep on the skill profile.
+      </p>
+    </div>
+  </section>
+
+  <!-- Founders -->
+  <section class="pb-20 sm:pb-28">
+    <div class="max-w-5xl mx-auto px-5 sm:px-8 lg:px-12">
+
+      <!-- Founder cards -->
+      <div class="bg-white rounded-2xl p-8 sm:p-12 mb-12">
+        <p class="text-xl sm:text-2xl text-[#1a1a1a]/80 leading-relaxed text-center max-w-3xl mx-auto">
+          Cross Ledger was founded by <strong class="text-[#6B4226]">Marcos Mazzini</strong>, a Big Four-trained Assurance accountant from Argentina, and <strong class="text-[#6B4226]">Federico Sapuppo</strong>, a financial advisor, software developer, and entrepreneur. The combination is the company: someone who knows what good accounting work actually looks like, and someone who knows how to build the tools and operations to deliver it at scale.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-8 mb-16">
+        <div class="card text-center">
+          <div class="icon-circle mx-auto">
+            <i data-lucide="briefcase"></i>
+          </div>
+          <h2 class="text-lg font-bold text-[#6B4226] mb-1 font-['Inter']">Marcos Mazzini</h2>
+          <p class="text-sm text-[#6B4226]/60 font-medium mb-4">Big Four-Trained Assurance Accountant</p>
+          <p class="text-[#1a1a1a]/60 text-sm leading-relaxed">A Big Four-trained Assurance accountant from Argentina who knows what good accounting work actually looks like, and what bad accounting work costs.</p>
+        </div>
+        <div class="card text-center">
+          <div class="icon-circle mx-auto">
+            <i data-lucide="code"></i>
+          </div>
+          <h2 class="text-lg font-bold text-[#6B4226] mb-1 font-['Inter']">Federico Sapuppo</h2>
+          <p class="text-sm text-[#6B4226]/60 font-medium mb-4">Financial Advisor, Developer & Entrepreneur</p>
+          <p class="text-[#1a1a1a]/60 text-sm leading-relaxed">A financial advisor, software developer, and entrepreneur who knows how to build the tools and operations to deliver quality at scale.</p>
+        </div>
+      </div>
+
+      <!-- Mission -->
+      <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
+        <div class="lg:w-1/2">
+          <div class="img-overlay aspect-[4/3]">
+            <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=700&q=80" alt="Diverse team working together" loading="lazy">
+          </div>
+        </div>
+        <div class="lg:w-1/2">
+          <div class="section-label">Our Mission</div>
+          <h2 class="text-3xl sm:text-4xl font-bold text-[#6B4226] mb-6">Why we built this</h2>
+          <p class="text-[#1a1a1a]/70 text-lg leading-relaxed">
+            We started Cross Ledger because we know what Latin American professionals are capable of. The talent is here: same skill, same rigor, same English. What's been missing is a way to get those professionals in front of US small businesses without the friction of time zones, bad sourcing, or expensive intermediaries. That's the company.
+          </p>
+        </div>
+      </div>
+
+      <!-- Company Info -->
+      <div class="text-center mt-16 pt-10 border-t border-[#6B4226]/8">
+        <div class="flex items-center justify-center gap-2 text-[#1a1a1a]/40 text-sm">
+          <i data-lucide="map-pin" class="w-4 h-4"></i>
+          Cross Ledger LLC &middot; Registered in Wyoming, USA
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-20 sm:py-28">
+    <div class="max-w-4xl mx-auto px-5 sm:px-8 lg:px-12">
+      <div class="cta-banner py-16 sm:py-20 px-8 sm:px-16 text-center">
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#FDF8F0] mb-5">Let's talk</h2>
+        <p class="text-[#FDF8F0]/80 mb-10 max-w-lg mx-auto text-lg leading-relaxed">Book a free discovery call and tell us what you need. We'll tell you exactly what we can do.</p>
+        <a href="https://calendly.com/fedesapuppo/30min" class="btn-light text-base px-10 py-4" target="_blank">
+          Book a Discovery Call
+          <i data-lucide="arrow-right" class="w-4 h-4"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-[#6B4226]/8 py-12">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12">
+      <div class="flex flex-col sm:flex-row justify-between items-center gap-8">
+        <div class="flex items-center gap-3">
+          <img src="logo.png" alt="Cross Ledger" class="h-14 w-auto">
+        </div>
+        <div class="flex flex-wrap justify-center gap-8 text-sm text-[#1a1a1a]/50">
+          <a href="mailto:fedesapuppo@hotmail.com" class="hover:text-[#6B4226] transition-colors">Contact</a>
+          <a href="privacy.html" class="hover:text-[#6B4226] transition-colors">Privacy Policy</a>
+          <a href="terms.html" class="hover:text-[#6B4226] transition-colors">Terms of Service</a>
+        </div>
+      </div>
+      <div class="text-center mt-8 text-xs text-[#1a1a1a]/35">
+        Cross Ledger LLC &middot; Wyoming, USA
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

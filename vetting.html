@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How We Vet | Cross Ledger</title>
+  <meta name="description" content="Our rigorous vetting process: structured interviews, English fluency checks, and practical accounting simulations ensure you get a bookkeeper who can do the job.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-cream">
+
+  <!-- Nav -->
+  <nav class="sticky top-0 z-50 bg-[#FDF8F0]/95 backdrop-blur-md border-b border-[#6B4226]/5">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12">
+      <div class="flex items-center justify-between h-24">
+        <a href="index.html" class="flex-shrink-0">
+          <img src="logo.png" alt="Cross Ledger" class="h-20 w-auto">
+        </a>
+        <div class="hidden md:flex items-center gap-10">
+          <a href="index.html" class="nav-link text-sm font-medium text-[#1a1a1a]/60 hover:text-[#6B4226] transition-colors">Home</a>
+          <a href="vetting.html" class="nav-link active text-sm font-medium text-[#6B4226]">How We Vet</a>
+          <a href="about.html" class="nav-link text-sm font-medium text-[#1a1a1a]/60 hover:text-[#6B4226] transition-colors">About</a>
+          <a href="faq.html" class="nav-link text-sm font-medium text-[#1a1a1a]/60 hover:text-[#6B4226] transition-colors">FAQ</a>
+          <a href="https://calendly.com/fedesapuppo/30min" class="btn-primary text-sm" target="_blank">Book a Discovery Call</a>
+        </div>
+        <button id="mobile-nav-toggle" class="md:hidden p-2" aria-expanded="false" aria-label="Toggle navigation">
+          <i id="menu-icon" data-lucide="menu" class="w-6 h-6 text-[#6B4226]"></i>
+          <i id="close-icon" data-lucide="x" class="w-6 h-6 text-[#6B4226]" style="display:none"></i>
+        </button>
+      </div>
+    </div>
+    <div id="mobile-menu" class="mobile-menu md:hidden border-t border-[#6B4226]/5">
+      <div class="px-5 py-4 space-y-1">
+        <a href="index.html" class="block py-3 text-sm font-medium text-[#1a1a1a]/60">Home</a>
+        <a href="vetting.html" class="block py-3 text-sm font-medium text-[#6B4226]">How We Vet</a>
+        <a href="about.html" class="block py-3 text-sm font-medium text-[#1a1a1a]/60">About</a>
+        <a href="faq.html" class="block py-3 text-sm font-medium text-[#1a1a1a]/60">FAQ</a>
+        <a href="https://calendly.com/fedesapuppo/30min" class="btn-primary text-sm text-center block mt-3" target="_blank">Book a Discovery Call</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="py-20 sm:py-28">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12">
+      <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-20 hero-split">
+        <div class="flex-1 text-center lg:text-left">
+          <div class="section-label">Our Vetting Process</div>
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-[#6B4226] leading-[1.1] mb-6">How we find your bookkeeper</h1>
+          <p class="text-lg text-[#1a1a1a]/70 max-w-xl leading-relaxed">
+            Most staffing agencies screen resumes. We run practical accounting simulations. Here's every step between your discovery call and a candidate you'd actually trust with your books.
+          </p>
+        </div>
+        <div class="flex-1 w-full lg:w-auto">
+          <div class="img-overlay aspect-[4/3]">
+            <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=800&q=80" alt="Team collaborating in a modern office" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process Steps -->
+  <section class="pb-20 sm:pb-28">
+    <div class="max-w-4xl mx-auto px-5 sm:px-8 lg:px-12">
+
+      <!-- Step 1 -->
+      <div class="flex gap-6 mb-2">
+        <div class="flex flex-col items-center">
+          <div class="step-number">1</div>
+          <div class="step-connector"></div>
+        </div>
+        <div class="pb-12">
+          <h2 class="text-2xl sm:text-3xl font-bold text-[#6B4226] mb-3">Scorecard call</h2>
+          <p class="text-[#1a1a1a]/70 leading-relaxed text-lg">We start with a 30-minute call with you. We go through your tools (QuickBooks? Xero? Shopify? Stripe?), your volume, your hours, and what's gone wrong with past bookkeepers. From that, we build a candidate scorecard: a checklist of exactly what your hire needs to be able to do on day one.</p>
+        </div>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="flex gap-6 mb-2">
+        <div class="flex flex-col items-center">
+          <div class="step-number">2</div>
+          <div class="step-connector"></div>
+        </div>
+        <div class="pb-12">
+          <h2 class="text-2xl sm:text-3xl font-bold text-[#6B4226] mb-3">Sourcing</h2>
+          <p class="text-[#1a1a1a]/70 leading-relaxed text-lg">We reach out to bookkeepers in Argentina, Mexico, and Colombia who match your scorecard. We're looking at real experience with the tools you use, not keyword matches on a resume.</p>
+        </div>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="flex gap-6 mb-2">
+        <div class="flex flex-col items-center">
+          <div class="step-number">3</div>
+          <div class="step-connector"></div>
+        </div>
+        <div class="pb-12">
+          <h2 class="text-2xl sm:text-3xl font-bold text-[#6B4226] mb-3">Structured interviews</h2>
+          <p class="text-[#1a1a1a]/70 leading-relaxed text-lg">Every candidate goes through a structured interview with the same questions and the same scoring rubric. We assess accounting knowledge, communication, and professionalism. No gut feelings, no "culture fit" handwaving.</p>
+        </div>
+      </div>
+
+      <!-- Step 4 -->
+      <div class="flex gap-6 mb-2">
+        <div class="flex flex-col items-center">
+          <div class="step-number">4</div>
+          <div class="step-connector"></div>
+        </div>
+        <div class="pb-12">
+          <h2 class="text-2xl sm:text-3xl font-bold text-[#6B4226] mb-3">English fluency check</h2>
+          <p class="text-[#1a1a1a]/70 leading-relaxed text-lg">We assess spoken and written English in a live conversation, not a standardized test. Can they explain a reconciliation discrepancy over Slack? Can they get on a call with your CPA and hold their own? That's the bar.</p>
+        </div>
+      </div>
+
+      <!-- Step 5 -->
+      <div class="flex gap-6 mb-2">
+        <div class="flex flex-col items-center">
+          <div class="step-number">5</div>
+          <div class="step-connector"></div>
+        </div>
+        <div class="pb-12">
+          <h2 class="text-2xl sm:text-3xl font-bold text-[#6B4226] mb-3">Practical simulations</h2>
+          <p class="text-[#1a1a1a]/70 leading-relaxed text-lg mb-6">This is where most candidates wash out, and where the ones who pass prove they're real. Every finalist completes hands-on simulations in the tools you actually use.</p>
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div class="sim-card">
+              <div class="flex items-start gap-3">
+                <i data-lucide="repeat" class="w-5 h-5 text-[#6B4226] mt-0.5 flex-shrink-0"></i>
+                <div>
+                  <h3 class="font-semibold text-sm mb-1 font-['Inter']">Shopify + Stripe + QBO Reconciliation</h3>
+                  <p class="text-[#1a1a1a]/60 text-sm">Match transactions across e-commerce, payment processing, and accounting.</p>
+                </div>
+              </div>
+            </div>
+            <div class="sim-card">
+              <div class="flex items-start gap-3">
+                <i data-lucide="message-square" class="w-5 h-5 text-[#6B4226] mt-0.5 flex-shrink-0"></i>
+                <div>
+                  <h3 class="font-semibold text-sm mb-1 font-['Inter']">Slack Communication</h3>
+                  <p class="text-[#1a1a1a]/60 text-sm">Simulated async communication. Can they ask the right questions and flag issues clearly?</p>
+                </div>
+              </div>
+            </div>
+            <div class="sim-card">
+              <div class="flex items-start gap-3">
+                <i data-lucide="landmark" class="w-5 h-5 text-[#6B4226] mt-0.5 flex-shrink-0"></i>
+                <div>
+                  <h3 class="font-semibold text-sm mb-1 font-['Inter']">Bank Reconciliation</h3>
+                  <p class="text-[#1a1a1a]/60 text-sm">Standard bank rec in QBO with intentional discrepancies to identify and resolve.</p>
+                </div>
+              </div>
+            </div>
+            <div class="sim-card">
+              <div class="flex items-start gap-3">
+                <i data-lucide="calendar-check" class="w-5 h-5 text-[#6B4226] mt-0.5 flex-shrink-0"></i>
+                <div>
+                  <h3 class="font-semibold text-sm mb-1 font-['Inter']">Monthly Close</h3>
+                  <p class="text-[#1a1a1a]/60 text-sm">Record a full month's transactions and produce a clean close with accruals and adjustments.</p>
+                </div>
+              </div>
+            </div>
+            <div class="sim-card">
+              <div class="flex items-start gap-3">
+                <i data-lucide="file-check" class="w-5 h-5 text-[#6B4226] mt-0.5 flex-shrink-0"></i>
+                <div>
+                  <h3 class="font-semibold text-sm mb-1 font-['Inter']">Year-End Prep</h3>
+                  <p class="text-[#1a1a1a]/60 text-sm">Organize documents, flag missing items, and prepare the file for a CPA.</p>
+                </div>
+              </div>
+            </div>
+            <div class="sim-card">
+              <div class="flex items-start gap-3">
+                <i data-lucide="video" class="w-5 h-5 text-[#6B4226] mt-0.5 flex-shrink-0"></i>
+                <div>
+                  <h3 class="font-semibold text-sm mb-1 font-['Inter']">On-Camera Vocabulary</h3>
+                  <p class="text-[#1a1a1a]/60 text-sm">Explain accounting concepts in plain English on video. If they can't explain it clearly, they don't know it well enough.</p>
+                </div>
+              </div>
+            </div>
+            <div class="sim-card sm:col-span-2">
+              <div class="flex items-start gap-3">
+                <i data-lucide="file-search" class="w-5 h-5 text-[#6B4226] mt-0.5 flex-shrink-0"></i>
+                <div>
+                  <h3 class="font-semibold text-sm mb-1 font-['Inter']">P&L Issue Identification</h3>
+                  <p class="text-[#1a1a1a]/60 text-sm">We hand them a P&L with embedded issues: miscategorized expenses, unusual variances, missing entries. They need to find them and explain what's wrong.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Step 6 -->
+      <div class="flex gap-6">
+        <div class="flex flex-col items-center">
+          <div class="step-number">6</div>
+        </div>
+        <div class="pb-2">
+          <h2 class="text-2xl sm:text-3xl font-bold text-[#6B4226] mb-3">Candidate intro video</h2>
+          <p class="text-[#1a1a1a]/70 leading-relaxed text-lg">Every candidate we present to you comes with a short video introduction. They introduce themselves in English, walk through their experience, and explain a basic accounting concept on camera. You can rule someone out in two minutes instead of two interviews.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-20 sm:py-28">
+    <div class="max-w-4xl mx-auto px-5 sm:px-8 lg:px-12">
+      <div class="cta-banner py-16 sm:py-20 px-8 sm:px-16 text-center">
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#FDF8F0] mb-5">See it in action</h2>
+        <p class="text-[#FDF8F0]/80 mb-10 max-w-lg mx-auto text-lg leading-relaxed">Book a discovery call and we'll walk you through exactly how the vetting process works for your specific role.</p>
+        <a href="https://calendly.com/fedesapuppo/30min" class="btn-light text-base px-10 py-4" target="_blank">
+          Book a Discovery Call
+          <i data-lucide="arrow-right" class="w-4 h-4"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-[#6B4226]/8 py-12">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12">
+      <div class="flex flex-col sm:flex-row justify-between items-center gap-8">
+        <div class="flex items-center gap-3">
+          <img src="logo.png" alt="Cross Ledger" class="h-14 w-auto">
+        </div>
+        <div class="flex flex-wrap justify-center gap-8 text-sm text-[#1a1a1a]/50">
+          <a href="mailto:fedesapuppo@hotmail.com" class="hover:text-[#6B4226] transition-colors">Contact</a>
+          <a href="privacy.html" class="hover:text-[#6B4226] transition-colors">Privacy Policy</a>
+          <a href="terms.html" class="hover:text-[#6B4226] transition-colors">Terms of Service</a>
+        </div>
+      </div>
+      <div class="text-center mt-8 text-xs text-[#1a1a1a]/35">
+        Cross Ledger LLC &middot; Wyoming, USA
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
