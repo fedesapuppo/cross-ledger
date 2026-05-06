@@ -130,6 +130,18 @@ img { max-width: 100%; height: auto; }
   stroke-width: 1.75;
 }
 
+/* Founder photo */
+.founder-photo {
+  width: 9rem;
+  height: 9rem;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 1.5rem;
+  background-color: var(--brown-muted);
+  box-shadow: 0 6px 20px rgba(107, 66, 38, 0.12);
+}
+
 /* Step numbers */
 .step-number {
   width: 3.25rem;
