@@ -1,9 +1,6 @@
-document.addEventListener('DOMContentLoaded', function () {
-  // Initialize Lucide icons
-  if (window.lucide) {
-    lucide.createIcons();
-  }
+document.documentElement.classList.add('js');
 
+document.addEventListener('DOMContentLoaded', function () {
   // Mobile nav toggle
   var toggle = document.getElementById('mobile-nav-toggle');
   var menu = document.getElementById('mobile-menu');
@@ -58,7 +55,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
-  // Intersection Observer for fade-in animations
+  // Intersection Observer for reveal animations
   var observer = new IntersectionObserver(function (entries) {
     entries.forEach(function (entry) {
       if (entry.isIntersecting) {
@@ -66,9 +63,9 @@ document.addEventListener('DOMContentLoaded', function () {
         observer.unobserve(entry.target);
       }
     });
-  }, { threshold: 0.1 });
+  }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
 
-  document.querySelectorAll('.fade-in').forEach(function (el) {
+  document.querySelectorAll('.reveal, .reveal-stagger').forEach(function (el) {
     observer.observe(el);
   });
 });

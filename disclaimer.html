@@ -18,8 +18,10 @@
   <meta name="twitter:title" content="Disclaimer &amp;amp; Trademark Notice | Cross Ledger">
   <meta name="twitter:description" content="Cross Ledger is an independent bookkeeper placement agency. We are not affiliated with, endorsed by, or partnered with Intuit, the maker of QuickBooks, or any other software provider we reference.">
   <meta name="twitter:image" content="https://crossledger.net/og-image.png">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://unpkg.com/lucide@0.460.0/dist/umd/lucide.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700;800&display=swap">
+  <link rel="stylesheet" href="tailwind.css">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body class="bg-cream">
@@ -27,9 +29,9 @@
   <!-- Nav -->
   <nav class="sticky top-0 z-50 bg-[#FDF8F0]/95 backdrop-blur-md border-b border-[#6B4226]/5">
     <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12">
-      <div class="flex items-center justify-between h-20">
+      <div class="flex items-center justify-between h-16 pt-1">
         <a href="index.html" class="flex-shrink-0">
-          <img src="logo.png" alt="Cross Ledger" class="h-14 w-auto">
+          <img src="logo.webp" alt="Cross Ledger" width="414" height="168" class="h-9 w-auto">
         </a>
         <div class="hidden md:flex items-center gap-10">
           <a href="index.html" class="nav-link text-sm font-medium text-[#1a1a1a]/60 hover:text-[#6B4226] transition-colors">Home</a>
@@ -39,8 +41,8 @@
           <a href="https://calendly.com/fedesapuppo/30min" class="btn-primary text-sm" target="_blank">Book a Discovery Call</a>
         </div>
         <button id="mobile-nav-toggle" class="md:hidden p-2" aria-expanded="false" aria-label="Toggle navigation">
-          <i id="menu-icon" data-lucide="menu" class="w-6 h-6 text-[#6B4226]"></i>
-          <i id="close-icon" data-lucide="x" class="w-6 h-6 text-[#6B4226]" style="display:none"></i>
+          <svg id="menu-icon" class="w-6 h-6 text-[#6B4226]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16"/><path d="M4 12h16"/><path d="M4 18h16"/></svg>
+          <svg id="close-icon" class="w-6 h-6 text-[#6B4226]" style="display:none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
         </button>
       </div>
     </div>
@@ -84,10 +86,10 @@
   </section>
 
   <!-- Footer -->
-  <footer class="border-t border-[#6B4226]/8 py-6">
+  <footer class="border-t border-[#6B4226]/8 py-4">
     <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12">
       <div class="flex flex-col sm:flex-row justify-between items-center gap-6">
-        <img src="logo.png" alt="Cross Ledger" class="h-14 w-auto">
+        <img src="logo.webp" alt="Cross Ledger" width="414" height="168" loading="lazy" decoding="async" class="h-8 w-auto">
         <div class="flex flex-wrap justify-center items-center gap-x-8 gap-y-3 text-sm text-[#1a1a1a]/50">
           <a href="mailto:fedesapuppo@hotmail.com" class="hover:text-[#6B4226] transition-colors">Contact</a>
           <a href="privacy.html" class="hover:text-[#6B4226] transition-colors">Privacy Policy</a>

@@ -18,8 +18,10 @@
   <meta name="twitter:title" content="About | Cross Ledger">
   <meta name="twitter:description" content="Cross Ledger was founded by a Big Four-trained accountant and an entrepreneur to connect US small businesses with top Latin American bookkeeping talent.">
   <meta name="twitter:image" content="https://crossledger.net/og-image.png">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://unpkg.com/lucide@0.460.0/dist/umd/lucide.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700;800&display=swap">
+  <link rel="stylesheet" href="tailwind.css">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body class="bg-cream">
@@ -27,9 +29,9 @@
   <!-- Nav -->
   <nav class="sticky top-0 z-50 bg-[#FDF8F0]/95 backdrop-blur-md border-b border-[#6B4226]/5">
     <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12">
-      <div class="flex items-center justify-between h-20">
+      <div class="flex items-center justify-between h-16 pt-1">
         <a href="index.html" class="flex-shrink-0">
-          <img src="logo.png" alt="Cross Ledger" class="h-14 w-auto">
+          <img src="logo.webp" alt="Cross Ledger" width="414" height="168" class="h-9 w-auto">
         </a>
         <div class="hidden md:flex items-center gap-10">
           <a href="index.html" class="nav-link text-sm font-medium text-[#1a1a1a]/60 hover:text-[#6B4226] transition-colors">Home</a>
@@ -39,8 +41,8 @@
           <a href="https://calendly.com/fedesapuppo/30min" class="btn-primary text-sm" target="_blank">Book a Discovery Call</a>
         </div>
         <button id="mobile-nav-toggle" class="md:hidden p-2" aria-expanded="false" aria-label="Toggle navigation">
-          <i id="menu-icon" data-lucide="menu" class="w-6 h-6 text-[#6B4226]"></i>
-          <i id="close-icon" data-lucide="x" class="w-6 h-6 text-[#6B4226]" style="display:none"></i>
+          <svg id="menu-icon" class="w-6 h-6 text-[#6B4226]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16"/><path d="M4 12h16"/><path d="M4 18h16"/></svg>
+          <svg id="close-icon" class="w-6 h-6 text-[#6B4226]" style="display:none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
         </button>
       </div>
     </div>
@@ -57,7 +59,7 @@
 
   <!-- Hero -->
   <section class="py-20 sm:py-28">
-    <div class="max-w-4xl mx-auto px-5 sm:px-8 lg:px-12 text-center">
+    <div class="max-w-4xl mx-auto px-5 sm:px-8 lg:px-12 text-center reveal">
       <div class="section-label justify-center">About Us</div>
       <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-[#6B4226] leading-[1.1] mb-6">The team behind Cross Ledger</h1>
       <p class="text-lg text-[#1a1a1a]/70 max-w-2xl mx-auto leading-relaxed">
@@ -71,15 +73,15 @@
     <div class="max-w-5xl mx-auto px-5 sm:px-8 lg:px-12">
 
       <!-- Founder cards -->
-      <div class="bg-white rounded-2xl p-8 sm:p-12 mb-12">
+      <div class="bg-white rounded-2xl p-8 sm:p-12 mb-12 reveal">
         <p class="text-xl sm:text-2xl text-[#1a1a1a]/80 leading-relaxed text-center max-w-3xl mx-auto">
           Cross Ledger was founded by <strong class="text-[#6B4226]">Marcos Mazzini</strong>, a Big Four-trained Assurance accountant from Argentina, and <strong class="text-[#6B4226]">Federico Sapuppo</strong>, a financial advisor, software developer, and entrepreneur. The combination is the company: someone who knows what good accounting work actually looks like, and someone who knows how to build the tools and operations to deliver it at scale.
         </p>
       </div>
 
-      <div class="grid md:grid-cols-2 gap-8 mb-16">
+      <div class="grid md:grid-cols-2 gap-8 mb-16 reveal-stagger">
         <div class="card text-center">
-          <img src="marcos.png" alt="Marcos Mazzini" class="founder-photo" loading="lazy">
+          <img src="marcos.webp" alt="Marcos Mazzini" width="432" height="432" class="founder-photo" loading="lazy" decoding="async">
           <h2 class="text-2xl font-bold text-[#6B4226] mb-1 font-['Inter']">Marcos Mazzini</h2>
           <p class="text-sm text-[#6B4226]/60 font-medium mb-4">Big Four-Trained Assurance Accountant</p>
           <p class="text-[#1a1a1a]/60 text-sm leading-relaxed">A Big Four-trained Assurance accountant from Argentina who knows what good accounting work actually looks like, and what bad accounting work costs.</p>
@@ -97,7 +99,7 @@
           </div>
         </div>
         <div class="card text-center">
-          <img src="federico.png" alt="Federico Sapuppo" class="founder-photo" loading="lazy">
+          <img src="federico.webp" alt="Federico Sapuppo" width="432" height="432" class="founder-photo" loading="lazy" decoding="async">
           <h2 class="text-2xl font-bold text-[#6B4226] mb-1 font-['Inter']">Federico Sapuppo</h2>
           <p class="text-sm text-[#6B4226]/60 font-medium mb-4">Financial Advisor, Developer & Entrepreneur</p>
           <p class="text-[#1a1a1a]/60 text-sm leading-relaxed">A financial advisor, software developer, and entrepreneur who knows how to build the tools and operations to deliver quality at scale.</p>
@@ -117,7 +119,7 @@
       </div>
 
       <!-- Mission -->
-      <div class="max-w-3xl">
+      <div class="max-w-3xl reveal">
         <div class="section-label">Our Mission</div>
         <h2 class="text-3xl sm:text-4xl font-bold text-[#6B4226] mb-6">Why we built this</h2>
         <p class="text-[#1a1a1a]/70 text-lg leading-relaxed">
@@ -130,7 +132,7 @@
   <!-- CTA -->
   <section class="py-10 sm:py-14">
     <div class="max-w-6xl mx-auto px-5 sm:px-8 lg:px-12">
-      <div class="cta-banner py-8 sm:py-10 px-6 sm:px-10">
+      <div class="cta-banner py-8 sm:py-10 px-6 sm:px-10 reveal">
         <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-6 md:gap-8">
           <div class="text-center md:text-left">
             <h2 class="text-2xl sm:text-3xl font-bold text-[#FDF8F0] mb-2">Let's talk</h2>
@@ -138,7 +140,7 @@
           </div>
           <a href="https://calendly.com/fedesapuppo/30min" class="btn-light text-base px-8 py-4 flex-shrink-0 whitespace-nowrap self-center md:self-auto" target="_blank">
             Book a Discovery Call
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
           </a>
         </div>
       </div>
@@ -146,10 +148,10 @@
   </section>
 
   <!-- Footer -->
-  <footer class="border-t border-[#6B4226]/8 py-6">
+  <footer class="border-t border-[#6B4226]/8 py-4">
     <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12">
       <div class="flex flex-col sm:flex-row justify-between items-center gap-6">
-        <img src="logo.png" alt="Cross Ledger" class="h-14 w-auto">
+        <img src="logo.webp" alt="Cross Ledger" width="414" height="168" loading="lazy" decoding="async" class="h-8 w-auto">
         <div class="flex flex-wrap justify-center items-center gap-x-8 gap-y-3 text-sm text-[#1a1a1a]/50">
           <a href="mailto:fedesapuppo@hotmail.com" class="hover:text-[#6B4226] transition-colors">Contact</a>
           <a href="privacy.html" class="hover:text-[#6B4226] transition-colors">Privacy Policy</a>

@@ -18,8 +18,10 @@
   <meta name="twitter:title" content="FAQ | Cross Ledger">
   <meta name="twitter:description" content="Frequently asked questions about Cross Ledger&#x27;s bookkeeper placement service: pricing, process, tools, guarantees, and more.">
   <meta name="twitter:image" content="https://crossledger.net/og-image.png">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://unpkg.com/lucide@0.460.0/dist/umd/lucide.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700;800&display=swap">
+  <link rel="stylesheet" href="tailwind.css">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body class="bg-cream">
@@ -27,9 +29,9 @@
   <!-- Nav -->
   <nav class="sticky top-0 z-50 bg-[#FDF8F0]/95 backdrop-blur-md border-b border-[#6B4226]/5">
     <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12">
-      <div class="flex items-center justify-between h-20">
+      <div class="flex items-center justify-between h-16 pt-1">
         <a href="index.html" class="flex-shrink-0">
-          <img src="logo.png" alt="Cross Ledger" class="h-14 w-auto">
+          <img src="logo.webp" alt="Cross Ledger" width="414" height="168" class="h-9 w-auto">
         </a>
         <div class="hidden md:flex items-center gap-10">
           <a href="index.html" class="nav-link text-sm font-medium text-[#1a1a1a]/60 hover:text-[#6B4226] transition-colors">Home</a>
@@ -39,8 +41,8 @@
           <a href="https://calendly.com/fedesapuppo/30min" class="btn-primary text-sm" target="_blank">Book a Discovery Call</a>
         </div>
         <button id="mobile-nav-toggle" class="md:hidden p-2" aria-expanded="false" aria-label="Toggle navigation">
-          <i id="menu-icon" data-lucide="menu" class="w-6 h-6 text-[#6B4226]"></i>
-          <i id="close-icon" data-lucide="x" class="w-6 h-6 text-[#6B4226]" style="display:none"></i>
+          <svg id="menu-icon" class="w-6 h-6 text-[#6B4226]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16"/><path d="M4 12h16"/><path d="M4 18h16"/></svg>
+          <svg id="close-icon" class="w-6 h-6 text-[#6B4226]" style="display:none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
         </button>
       </div>
     </div>
@@ -57,7 +59,7 @@
 
   <!-- Hero -->
   <section class="py-20 sm:py-28">
-    <div class="max-w-4xl mx-auto px-5 sm:px-8 lg:px-12 text-center">
+    <div class="max-w-4xl mx-auto px-5 sm:px-8 lg:px-12 text-center reveal">
       <div class="section-label justify-center">FAQ</div>
       <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-[#6B4226] leading-[1.1] mb-6">Frequently Asked Questions</h1>
       <p class="text-lg text-[#1a1a1a]/70 max-w-2xl mx-auto leading-relaxed">
@@ -70,7 +72,7 @@
   <section class="pb-20 sm:pb-28">
     <div class="max-w-3xl mx-auto px-5 sm:px-8 lg:px-12">
 
-      <div class="faq-item">
+      <div class="faq-item reveal">
         <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
           <h3>How is this different from hiring offshore in the Philippines or India?</h3>
           <svg class="faq-chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
@@ -80,7 +82,7 @@
         </div>
       </div>
 
-      <div class="faq-item">
+      <div class="faq-item reveal">
         <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
           <h3>How is this different from Toptal, Upwork, or a freelancer marketplace?</h3>
           <svg class="faq-chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
@@ -90,7 +92,7 @@
         </div>
       </div>
 
-      <div class="faq-item">
+      <div class="faq-item reveal">
         <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
           <h3>How is this different from a traditional staffing agency?</h3>
           <svg class="faq-chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
@@ -100,7 +102,7 @@
         </div>
       </div>
 
-      <div class="faq-item">
+      <div class="faq-item reveal">
         <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
           <h3>What countries do your candidates come from?</h3>
           <svg class="faq-chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
@@ -110,7 +112,7 @@
         </div>
       </div>
 
-      <div class="faq-item">
+      <div class="faq-item reveal">
         <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
           <h3>Are your candidates contractors or employees?</h3>
           <svg class="faq-chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
@@ -120,7 +122,7 @@
         </div>
       </div>
 
-      <div class="faq-item">
+      <div class="faq-item reveal">
         <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
           <h3>How do I pay them?</h3>
           <svg class="faq-chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
@@ -130,7 +132,7 @@
         </div>
       </div>
 
-      <div class="faq-item">
+      <div class="faq-item reveal">
         <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
           <h3>How much does it cost?</h3>
           <svg class="faq-chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
@@ -140,7 +142,7 @@
         </div>
       </div>
 
-      <div class="faq-item">
+      <div class="faq-item reveal">
         <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
           <h3>What if the placement doesn't work out?</h3>
           <svg class="faq-chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
@@ -150,7 +152,7 @@
         </div>
       </div>
 
-      <div class="faq-item">
+      <div class="faq-item reveal">
         <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
           <h3>How long does the process take?</h3>
           <svg class="faq-chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
@@ -160,7 +162,7 @@
         </div>
       </div>
 
-      <div class="faq-item">
+      <div class="faq-item reveal">
         <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
           <h3>What tools do your candidates know?</h3>
           <svg class="faq-chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
@@ -170,7 +172,7 @@
         </div>
       </div>
 
-      <div class="faq-item">
+      <div class="faq-item reveal">
         <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
           <h3>Do you offer payroll or EOR services?</h3>
           <svg class="faq-chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
@@ -180,7 +182,7 @@
         </div>
       </div>
 
-      <div class="faq-item">
+      <div class="faq-item reveal">
         <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
           <h3>What's the typical salary range for the bookkeepers you place?</h3>
           <svg class="faq-chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
@@ -190,7 +192,7 @@
         </div>
       </div>
 
-      <div class="faq-item">
+      <div class="faq-item reveal">
         <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
           <h3>Can I hire someone part-time?</h3>
           <svg class="faq-chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
@@ -200,7 +202,7 @@
         </div>
       </div>
 
-      <div class="faq-item">
+      <div class="faq-item reveal">
         <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
           <h3>Do you place anyone other than bookkeepers and staff accountants?</h3>
           <svg class="faq-chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
@@ -210,7 +212,7 @@
         </div>
       </div>
 
-      <div class="faq-item">
+      <div class="faq-item reveal">
         <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
           <h3>Where is Cross Ledger legally based?</h3>
           <svg class="faq-chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
@@ -226,7 +228,7 @@
   <!-- CTA -->
   <section class="py-10 sm:py-14">
     <div class="max-w-6xl mx-auto px-5 sm:px-8 lg:px-12">
-      <div class="cta-banner py-8 sm:py-10 px-6 sm:px-10">
+      <div class="cta-banner py-8 sm:py-10 px-6 sm:px-10 reveal">
         <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-6 md:gap-8">
           <div class="text-center md:text-left">
             <h2 class="text-2xl sm:text-3xl font-bold text-[#FDF8F0] mb-2">Still have questions?</h2>
@@ -234,7 +236,7 @@
           </div>
           <a href="https://calendly.com/fedesapuppo/30min" class="btn-light text-base px-8 py-4 flex-shrink-0 whitespace-nowrap self-center md:self-auto" target="_blank">
             Book a Discovery Call
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
           </a>
         </div>
       </div>
@@ -242,10 +244,10 @@
   </section>
 
   <!-- Footer -->
-  <footer class="border-t border-[#6B4226]/8 py-6">
+  <footer class="border-t border-[#6B4226]/8 py-4">
     <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12">
       <div class="flex flex-col sm:flex-row justify-between items-center gap-6">
-        <img src="logo.png" alt="Cross Ledger" class="h-14 w-auto">
+        <img src="logo.webp" alt="Cross Ledger" width="414" height="168" loading="lazy" decoding="async" class="h-8 w-auto">
         <div class="flex flex-wrap justify-center items-center gap-x-8 gap-y-3 text-sm text-[#1a1a1a]/50">
           <a href="mailto:fedesapuppo@hotmail.com" class="hover:text-[#6B4226] transition-colors">Contact</a>
           <a href="privacy.html" class="hover:text-[#6B4226] transition-colors">Privacy Policy</a>
