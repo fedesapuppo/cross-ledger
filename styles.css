@@ -94,6 +94,13 @@ img { max-width: 100%; height: auto; }
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
 }
 
+/* Used in HTML, missing from the committed Tailwind build. */
+@media (min-width: 640px) {
+  .sm\:items-start { align-items: flex-start; }
+}
+
+.text-\[\#FDF8F0\]\/75 { color: rgb(253 248 240 / 0.75); }
+
 /* Cards */
 .card {
   background-color: var(--white);
